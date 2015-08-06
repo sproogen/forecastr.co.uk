@@ -1,0 +1,30 @@
+#header {
+	color:#666666;
+
+	background-size:cover;
+
+	filter: blur(5px);
+	// Browser Specific
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+}
+
+.header-title {
+	padding: 0px 0 0 40px;
+    margin-top: -90px;
+    margin-bottom: 200px;
+}
+
+.header-img-wrapper {
+	    position: relative;
+}
+
+.header-img {
+	position: absolute;
+    top: -260px;
+    left: -200px;
+    width: 700px;
+    right: 0;
+}
