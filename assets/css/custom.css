@@ -27,13 +27,20 @@
     float:none;
     margin: 0 auto;
     margin-top:80px;
+    padding: 5px 20px;
+    display: inline-block;
+    font-weight: 400;
+    max-width: 400px;
 }
 
-/*.button--ujarak::before {
-    background: #80C011;
+.button i {
+    float:right;
 }
 
-.button--ujarak:hover {
-    border-color: #80C011;
-    color:#37474f;
-}*/
+.dark a.button:hover {
+    border-bottom-color: #37474f;
+}
+
+.cl-effect-4 a::after {
+    background:#666666;
+}
