@@ -1,13 +1,16 @@
 #header {
 	color:#666666;
-
 	background-size:cover;
+
+    padding: 10em 0 14em 0;
+}
+
+p.small {
+    font-size: 0.8em;
 }
 
 .header-title {
 	padding: 0px 0 0 40px;
-    margin-top: -60px;
-    margin-bottom: 60px;
 }
 
 .header-img-wrapper {
@@ -16,10 +19,42 @@
 
 .header-img {
 	position: absolute;
-    top: -260px;
-    left: -200px;
-    width: 700px;
+    top: -80px;
+    left: -50px;
+    width: 400px;
     right: 0;
+}
+
+.jg-img {
+    background:#000;
+    width:200px;
+    height:200px;
+    margin:0 auto;
+    margin-bottom:20px;
+    display: block;
+
+    border-radius: 100px;
+
+    background-image: url("../../images/jg.jpg");
+    background-size: cover;
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat;
+
+    -webkit-transition: all 0.4s ease;
+     -moz-transition: all 0.4s ease;
+       -o-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+
+    -webkit-filter: grayscale(80%);
+
+    -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+
+.jg-img:hover {
+    -webkit-filter: grayscale(0%);
 }
 
 .button {
@@ -33,7 +68,15 @@
     max-width: 400px;
 }
 
-.button i {
+.icons .button {
+    margin-top:0px;
+}
+
+.button--round-l {
+    border-radius: 40px;
+}
+
+.button-icon i {
     float:right;
 }
 
@@ -43,4 +86,168 @@
 
 .cl-effect-4 a::after {
     background:#666666;
+}
+
+.main > header {
+    padding: 3em 0 3em 0;
+}
+
+.main > .content {
+    padding: 3em 0 3em 0;
+}
+
+.main > .content.style1 {
+    background: #f9fbfa;
+    padding-bottom:0px;
+    border-top: 2px dashed #D8D8D8;
+}
+
+.main > .content-header.style1 {
+    background-image: url("../../images/background2.png");
+    background-size: cover;
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat;
+    height:600px;
+    margin-top:-125px;
+}
+
+figcaption {
+    padding:10px;
+}
+
+figcaption p {
+    padding: 0;
+    color: #fff;
+    margin: 0;
+    padding:10px;
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+.feature-background {
+    border: 5px dashed #D8D8D8;
+    border-radius: 5px;
+}
+
+.feature-item {
+    padding:20px;
+}
+
+#footer {
+    padding: 2em 0 2em 0;
+}
+
+#footer ul.icons a {
+    box-shadow: none;
+    padding-top: 6px;
+}
+
+.grid {
+    padding: 0;
+}
+
+/* Wide */
+
+    @media screen and (max-width: 1680px) {
+
+        /* Basic */
+
+        body, input, textarea, select {
+            font-size: 15pt;
+            line-height: 1.75em;
+        }
+
+        #header {
+            padding: 8em 0 12em 0;
+        }
+
+        .main > .content-header.style1 {
+            height:500px;
+        }
+
+        #footer ul.icons a {
+            padding-top: 10px;
+        }
+
+    }
+
+/* Normal */
+
+    @media screen and (max-width: 1280px) {
+
+         #header {
+            padding: 6em 0 12em 0;
+        }
+
+        .header-img {
+            position: absolute;
+            top: -40px;
+            width: 350px;
+            right: 0;
+        }
+
+        .button {
+            margin-top:60px;
+        }
+
+        .icons .button {
+            margin-top:0px;
+        }
+
+        .main > .content-header.style1 {
+            height:400px;
+        }
+    }
+
+/* Narrow */
+
+    @media screen and (max-width: 1000px) {
+
+        #header {
+            margin: 0 !important;
+            padding: 8em 2em 2em 2em;
+        }
+
+        .header-img {
+            width: 300px;
+            float: right;
+            top:0;
+            left:0;
+            margin-top: -150px;
+            position:relative;
+        }
+
+        .main > header {
+            padding: 3.5em 2em 3.5em 2em;
+        }
+
+        .main > .content {
+            padding: 3.5em 20px 3.5em 20px;
+        }
+    }
+
+/* Mobile */
+
+    @media screen and (max-width: 736px) {
+
+        #header {
+            padding: 6em 20px 4em 20px;
+        }
+
+        .main > header {
+            padding: 3em 20px 3em 20px;
+        }
+
+        .main > .content {
+            padding: 3em 20px 3em 20px;
+        }
+
+        .header-img {
+            width: 300px;
+            float: none;
+            top:0;
+            left:0;
+            margin-top: 0px;
+            position:relative;
+        }
 }

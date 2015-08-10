@@ -20,9 +20,12 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" type="text/css" href="assets/libs/buttonstyles/css/buttons.css" />
 		<link rel="stylesheet" type="text/css" href="assets/libs/linkeffects/component.css" />
+		<link rel="stylesheet" type="text/css" href="assets/libs/captionhover/component.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+		<script src="assets/libs/captionhover/modernizr.custom.js"></script>
 	</head>
 	<body>
 
@@ -57,17 +60,91 @@
 						<p>Forecastr is an android app designed to make it easy to view you favourite locations. Targeted at sports where the weather is key to a good session forecastr makes it quick to see which spot is best all in one screen. Forecastr includes wind, weather, swell and tide times all in one place.<br/><br/>Check out below to see all the features and how to install thew app.</p>
 					</div>
 				</header>
-				<div id="install" class="content dark style1 featured">
+				<div class="content style1 featured">
 					<div class="container">
 						<section>
 							<header>
-								<h3>Features & How to install</h3>
+								<h3>Features</h3>
+							</header>
+							<div class="row grid cs-style-3">
+								<div class="feature-item 4u 6u(normal) 12u(narrow)">
+									<div class="feature-background">
+										<figure>
+											<img src="images/6.png" alt="img04">
+											<figcaption>
+												<p>Find your favourite spots all on one screen.</p>
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+								<div class="feature-item 4u 6u(normal) 12u(narrow)">
+									<div class="feature-background">
+										<figure>
+											<img src="images/3.png" alt="img04">
+											<figcaption>
+												<p>View swell for spots near to the sea.</p>
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+								<div class="feature-item 4u 6u(normal) 12u(narrow)">
+									<div class="feature-background">
+										<figure>
+											<img src="images/4.png" alt="img04">
+											<figcaption>
+												<p>View tide times for spots near to the sea.</p>
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+								<div class="feature-item 4u 6u(normal) 12u(narrow)">
+									<div class="feature-background">
+										<figure>
+											<img src="images/5.png" alt="img04">
+											<figcaption>
+												<p>Sun rise and Sun set for all spots.</p>
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+								<div class="feature-item 4u 6u(normal) 12u(narrow)">
+									<div class="feature-background">
+										<figure>
+											<img src="images/8.png" alt="img04">
+											<figcaption>
+												<p>Search for spots in the side menu.</p>
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+								<div class="feature-item 4u 6u(normal) 12u(narrow)">
+									<div class="feature-background">
+										<figure>
+											<img src="images/10.png" alt="img04">
+											<figcaption>
+												<p>Manage favourite spots through the side menu.</p>
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</section>
+						<hr/>
+						<section id="install">
+							<header>
+								<h3>How to Install</h3>
 
-								<a target="_blank" href="http://windforecastapi.jameswgrant.co.uk/releases/latest/WindForecastApp.apk" class="button button--ujarak button--border-thick button--text-upper">Install Now</a>
+								<p>Before you download the app please make sure you have your device set to allow apps from unknow sources, as this app is not in the Google Play store. There is a useful guide to do this <a target="_blank" href="http://www.tech-recipes.com/rx/22616/android-allow-installation-of-non-market-apps/">HERE</a>.</p>
+
+								<p>Then on your Android device click the install now button below to download the APK and start the install process. Alternatively you can download the APK on your PC and email it to your device.</p>
+
+								<a target="_blank" href="http://api.forecastr.co.uk/releases/latest/WindForecastApp.apk" class="button button--ujarak button--border-thick button--text-upper">Install Now</a>
+								<p class="small">v0.3.1</p>
 							</header>
 						</section>
 					</div>
 				</div>
+				<div class="content-header style1"></div>
 			</section>
 
 		<!-- Second -->
@@ -76,7 +153,7 @@
 					<div class="container">
 						<h2 class="cl-effect cl-effect-4">Check it out on <a target="_blank" href="https://github.com/sproogen/ForecastrApp">GitHub</a></h2>
 						<p>The code for this project is publicly available on GitHub, feel free to check it out and let me know if you have any suggestions. If you find any bugs or have any suggestions feel free to add a new issue or submit a pull request.</p>
-						<a target="_blank" href="https://github.com/sproogen/ForecastrApp" class="button button--ujarak button--border-thick button--text-upper">Find on GitHub&nbsp;&nbsp;<i class="icon fa-github"></i></a>
+						<a target="_blank" href="https://github.com/sproogen/ForecastrApp" class="button button--ujarak button--border-thick button-icon button--text-upper">Source on GitHub&nbsp;&nbsp;<i class="icon fa-github"></i></a>
 					</div>
 				</header>
 				<div class="content dark style3">
@@ -85,223 +162,37 @@
 							<header>
 								<h3>About Me</h3>
 							</header>
-							<p>Info about me.</p>
-						</section>
-					</div>
-				</div>
-			</section>
+							<div class="row">
+								<div class="3u 12u(narrow)"><span class="jg-img"></span></div>
+								<p class="9u 12u(narrow)">My name is James Grant, landboarder, kitesurfer, rock climber, cycler and developer from the West Country. I build android apps, ios apps and websites and this is my first android app publicly out in the wild. When I'm not working you will usually find me out on my bike or at one of Bristols climbing centers.</p>
 
-		<!-- Basic Elements -->
-		<!--
-			<section class="main">
-				<header>
-					<div class="container">
-						<h2>A Whole Lotta Elements</h2>
-						<p>General purpose elements for every general purpose. Or something like that.</p>
-					</div>
-				</header>
-				<div class="content style1 dark">
-					<div class="container">
-						<section>
-							<header>
-								<h3>Paragraph</h3>
-								<p>This is a byline</p>
-							</header>
-							<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
-							habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
-							leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
-							amet risus elit.</p>
-						</section>
-						<section>
-							<header>
-								<h3>Blockquote</h3>
-							</header>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
-							tempus euismod. Vestibulum ante ipsum primis in faucibus. Cras sit amet urna eros, id egestas
-							tempus ante ipsum primis in faucibus orci luctus et ultrices.</blockquote>
-						</section>
-						<section>
-							<header>
-								<h3>Divider</h3>
-							</header>
-							<p>Donec consectetur <a href="#">vestibulum dolor et pulvinar</a>. Etiam vel felis enim, at viverra
-							ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-							facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-							tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-							posuere cubilia.</p>
-							<hr />
-							<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-							ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-							facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-							tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-							posuere cubilia.</p>
-						</section>
-						<section>
-							<header>
-								<h3>Unordered List</h3>
-							</header>
-							<ul class="default">
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-							</ul>
-						</section>
-						<section>
-							<header>
-								<h3>Ordered List</h3>
-							</header>
-							<ol class="default">
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-							</ol>
-						</section>
-						<section>
-							<header>
-								<h3>Table</h3>
-							</header>
-							<div class="table-wrapper">
-								<table class="default">
-									<thead>
-										<tr>
-											<th>ID</th>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>00001</td>
-											<td>Lorem ipsum dolor</td>
-											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>00002</td>
-											<td>Sit amet nullam</td>
-											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>00003</td>
-											<td>Feugiat felis viverra</td>
-											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>00004</td>
-											<td>Sagittis enim felis</td>
-											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>00005</td>
-											<td>Nullam sed vestibulum</td>
-											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-											<td>19.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="3"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
 							</div>
-						</section>
-						<section>
-							<header>
-								<h3>Form</h3>
-							</header>
-							<form method="post" action="#">
-								<div class="row 50%">
-									<div class="6u 12u(narrow)">
-										<input type="text" name="name" id="name" value="" placeholder="John Doe" />
-									</div>
-									<div class="6u 12u(narrow)">
-										<input type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
-									</div>
-								</div>
-								<div class="row 50%">
-									<div class="12u">
-										<div class="select" tabindex="-1">
-											<select name="department" id="department">
-												<option value="">Choose a department</option>
-												<option value="1">Manufacturing</option>
-												<option value="2">Administration</option>
-												<option value="3">Support</option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="row 50%">
-									<div class="12u">
-										<input type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
-									</div>
-								</div>
-								<div class="row 50%">
-									<div class="12u">
-										<textarea name="message" id="message" placeholder="Enter your message"></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<div class="12u">
-										<ul class="actions">
-											<li><input type="submit" class="button" value="Send Message" /></li>
-											<li><input type="reset" class="button alt" value="Clear Form" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
+							<p>Most of the sports I do rely on knowing what the weather is up to and, as I do lots of sports in lots of places, I wanted to be able to check out the weather for all the spots quickly and easily. This is the primary reason why Forecastr was created and I use it daily to work out if I'm going cycling, kiting or climbing and I hope it can help you out to.</p>
+
+							<p>Please check out my website <a target="_blank" href="http://jwgmedia.co.uk">JWGMedia.co.uk</a> to see some more of what I do and find me on my social media below.</p>
 						</section>
 					</div>
 				</div>
 			</section>
-		-->
-		
 
 		<!-- Fourth -->
 			<section id="fourth" class="main">
 				<header>
 					<div class="container">
 						<h2>Tried the app? Want to give me some feedback?</h2>
-						<p>You can use the form below to give me any feedback or head over to my social media, website or git repo.</p>
+						<p>You can get in touch with me at <a target="_blank" href="mailto:james@forecastr.co.uk">james@forecastr.co.uk</a> or head over to my social media below and send me a message. You can also head over to my website or git repo for more information.</p>
 					</div>
 				</header>
-				<div class="content style4 featured">
-					<div class="container 75%">
-						<form method="post" action="#">
-							<div class="row 50%">
-								<div class="6u 12u(mobile)"><input type="text" placeholder="Name" /></div>
-								<div class="6u 12u(mobile)"><input type="text" placeholder="Email" /></div>
-							</div>
-							<div class="row 50%">
-								<div class="12u"><textarea name="message" placeholder="Message"></textarea></div>
-							</div>
-							<div class="row">
-								<div class="12u">
-									<ul class="actions">
-										<li><input type="submit" class="button" value="Send Message" /></li>
-										<li><input type="reset" class="button alt" value="Clear Form" /></li>
-									</ul>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
 			</section>
 
 		<!-- Footer -->
 			<section id="footer">
 				<ul class="icons">
-					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					<li><a target="_blank" href="http://jwgmedia.co.uk" class="button button--sacnite button--round-l"><i class="button__icon icon fa-globe"></i></a></li>
+					<li><a target="_blank" href="https://twitter.com/sproogen" class="button button--sacnite button--round-l"><i class="button__icon icon fa-twitter"></i></a></li>
+					<li><a target="_blank" href="https://www.facebook.com/jwgMedia" class="button button--sacnite button--round-l"><i class="button__icon icon fa-facebook"></i></a></li>
+					<li><a target="_blank" href="https://instagram.com/jameswgrant/" class="button button--sacnite button--round-l"><i class="button__icon icon fa-instagram"></i></a></li>
+					<li><a target="_blank" href="https://github.com/sproogen" class="button button--sacnite button--round-l"><i class="button__icon icon fa-github"></i></a></li>
 				</ul>
 				<div class="copyright">
 					<ul class="menu">
@@ -317,6 +208,7 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="assets/libs/captionhover/toucheffects.js"></script>
 
 	</body>
 </html>
